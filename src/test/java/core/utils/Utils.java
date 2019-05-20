@@ -26,7 +26,7 @@ public class Utils {
 			Utils.WriteLogs("pass","Browser Chrome Invoked with URL as : " + url);
 			return driver;
 		}catch(Exception e) {
-			Reporter.log("Unable to Invoke Browser. Type:" + browserType + " URL:" + url, true);
+			Utils.WriteLogs("fail","Unable to Invoke Browser. Type:" + browserType + " URL:" + url);
 			return null;
 		}
 		
