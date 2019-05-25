@@ -11,11 +11,14 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.testng.listener.ExtentITestListenerClassAdapter;
+
 import retailbanking.po.PO_Common;
 import retailbanking.po.PO_Login;
 import retailbanking.po.PO_TransferFunds;
 import core.utils.*;
 
+@Listeners(ExtentITestListenerClassAdapter.class)
 public class SmokeTest {
 	
 	@Parameters({"url","browser"})
@@ -24,7 +27,7 @@ public class SmokeTest {
 		try {
 			//String url = "http://zero.webappsecurity.com/login.html";
 			WebDriver driver = Utils.InvokeBrowser(browserType, url);
-
+			
 			//Init Page Object
 			PO_Login PO_Login = PageFactory.initElements(driver, PO_Login.class);
 			PO_Login.KW_LoginInToApplication("username", "password");

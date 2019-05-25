@@ -2,6 +2,7 @@
 *.class
 *.classpath
 *.project
+/test-output
 
 
 # Log file

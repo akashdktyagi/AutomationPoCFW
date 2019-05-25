@@ -20,13 +20,13 @@ public class PO_Login {
 	}
 
 	//Elements or Locators
-	@FindBy(how = How.NAME,using="user_login")
+	@FindBy(how = How.XPATH,using="//input[@name = 'username' or @name = 'user_login']")
 	WebElement txtbx_username;
-
-	@FindBy(how = How.NAME,using="user_password")
+	//input[@name = 'password' or @name = 'user_password']
+	@FindBy(how = How.XPATH,using="//input[@name = 'password' or @name = 'user_password']")
 	WebElement txtbx_password;
 
-	@FindBy(how = How.XPATH,using="//input[@value = 'Sign in']")
+	@FindBy(how = How.XPATH,using="//input[@value = 'Sign in' or @value= 'Log In']")
 	WebElement btn_submit;
 
 	
@@ -71,7 +71,7 @@ public class PO_Login {
 			SetUserName(u);
 			SetPassword(p);
 			ClickSubmitButton();
-			Utils.WriteLogs("fail","User name and password Set and Submit Button Clicked.");
+			Utils.WriteLogs("info","User name and password Set and Submit Button Clicked.");
 
 			//CheckPoint
 			String expected = "Zero - Account Summary";
