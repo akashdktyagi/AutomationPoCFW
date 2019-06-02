@@ -19,7 +19,10 @@ public class PO_Login {
 	WebElement txtb_user_name;
 	
 	
-	
+	public void sarang_moethod()
+	{
+		//my method
+	}
 	
 	
 }
