@@ -24,7 +24,10 @@ public class PO_Login {
 	}
 	
 	
-	
+	public void sarang_moethod()
+	{
+		//my method
+	}
 	
 	
 }
