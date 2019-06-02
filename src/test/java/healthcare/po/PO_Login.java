@@ -7,22 +7,8 @@ import org.openqa.selenium.support.How;
 
 public class PO_Login {
 	
-	WebDriver driver;
-	
-	public PO_Login(WebDriver driver) {
-		// TODO Auto-generated constructor stub
-		this.driver = driver;
-	}
-	
-	//Page Objects
-	@FindBy(how = How.ID,using = "username")
-	WebElement txtb_user_name;
 	
 	
-	public void sarang_moethod()
-	{
-		//my method
-	}
 	
 	
 }
