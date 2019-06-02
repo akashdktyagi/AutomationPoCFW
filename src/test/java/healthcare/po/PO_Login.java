@@ -18,6 +18,11 @@ public class PO_Login {
 	@FindBy(how = How.ID,using = "username")
 	WebElement txtb_user_name;
 	
+	public void AkashMethod() {
+		//Body added as per commnets from sarang
+		
+	}
+	
 	
 	
 	
