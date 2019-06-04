@@ -33,6 +33,7 @@ public class SmokeTest {
 			PO_Login.KW_LoginInToApplication("username", "password");
 			
 			Utils.WriteLogs("pass","Test Case completed");
+			driver.quit();
 		}catch(Exception e) {
 			Utils.WriteLogs("fail","Test failed");
 			Assert.assertFalse(false);
